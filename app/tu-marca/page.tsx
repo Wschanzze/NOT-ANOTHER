@@ -53,13 +53,18 @@ export default function TuMarca() {
         </div>
       </section>
 
-      {/* Spline 3D brand section */}
+      {/* Brand showcase */}
       <section className="relative z-10 container mx-auto px-6 lg:px-12 mb-24">
-        <div className="relative rounded-2xl overflow-hidden border border-zinc-800" style={{ height: "60vh" }}>
-          <SplineScene
-            scene="https://prod.spline.design/qflZm3CuXBKJXdIQ/scene.splinecode"
-            style={{ width: "100%", height: "100%" }}
-          />
+        <div className="relative rounded-2xl overflow-hidden border border-zinc-800/60 bg-zinc-950/50" style={{ height: "50vh" }}>
+          {/* Subtle gradient background instead of Spline */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#5100fd]/10 via-transparent to-[#84cc16]/10" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(132,204,22,0.08),transparent_40%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(81,0,253,0.1),transparent_40%)]" />
+          
+          {/* Decorative elements */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+            <p className="text-6xl md:text-8xl font-light text-white/5 tracking-widest">NOT ANOTHER</p>
+          </div>
         </div>
       </section>
 

@@ -184,8 +184,8 @@ export default function Home() {
             Not Another
             <br />
             <span
-              className={`inline-block mt-4 px-5 py-2 rounded-xl border border-[#84cc16]/40 bg-[#84cc16]/10 backdrop-blur-md text-[#f2f6ec] transition-all duration-500 ${
-                visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+              className={`animate-text-shimmer inline-block transition-all duration-500 font-normal ${
+                visible ? "opacity-100" : "opacity-0"
               }`}
             >
               {CYCLING_WORDS[wordIndex]}
