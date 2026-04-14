@@ -25,7 +25,7 @@ export default function TuMarca() {
           }}
         />
         <div className="relative z-10 container mx-auto px-6 lg:px-12 text-center flex flex-col items-center gap-8">
-          <span className="text-xs uppercase tracking-widest text-zinc-500 border border-zinc-800 px-4 py-2 rounded-full">
+          <span className="text-xs uppercase tracking-widest text-zinc-500 border border-zinc-800 px-4 py-2 rounded-full animate-text-shimmer">
             Consultoría de Marca
           </span>
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-light text-balance max-w-5xl leading-[0.95]">
@@ -71,7 +71,7 @@ export default function TuMarca() {
       {/* Services grid */}
       <section id="estrategia" className="relative z-10 py-24 border-t border-zinc-800">
         <div className="container mx-auto px-6 lg:px-12">
-          <p className="text-xs uppercase tracking-widest text-zinc-500 mb-4">Lo que hacemos</p>
+          <p className="text-xs uppercase tracking-widest text-zinc-500 mb-4 animate-text-shimmer">Lo que hacemos</p>
           <div className="flex flex-col md:flex-row md:items-end gap-6 mb-16">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-balance flex-1">
               Servicios diseñados para hacer crecer tu marca
@@ -188,7 +188,7 @@ export default function TuMarca() {
               <div className="absolute inset-0 bg-[#5100fd]/20 mix-blend-multiply" />
             </div>
             <div className="flex flex-col gap-8">
-              <p className="text-xs uppercase tracking-widest text-zinc-500">Nuestra filosofía</p>
+              <p className="text-xs uppercase tracking-widest text-zinc-500 animate-text-shimmer">Nuestra filosofía</p>
               <h2 className="text-4xl md:text-5xl font-light text-balance leading-tight">
                 Una marca que transmite es una marca que vende
               </h2>
@@ -221,7 +221,7 @@ export default function TuMarca() {
       {/* Process */}
       <section className="relative z-10 py-24 border-t border-zinc-800">
         <div className="container mx-auto px-6 lg:px-12">
-          <p className="text-xs uppercase tracking-widest text-zinc-500 mb-4">Proceso</p>
+          <p className="text-xs uppercase tracking-widest text-zinc-500 mb-4 animate-text-shimmer">Proceso</p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-balance mb-16 max-w-2xl">
             De la estrategia a la identidad en 4 pasos
           </h2>
@@ -232,9 +232,9 @@ export default function TuMarca() {
               { num: "03", title: "Identidad", desc: "Traducimos la estrategia en un sistema visual y verbal coherente: logo, colores, tipografía, voz y tono.", image: "/images/marca-identidad.jpg" },
               { num: "04", title: "Activación", desc: "Implementamos la marca en todos los puntos de contacto y te entregamos las herramientas para mantenerla viva.", image: "/images/marca-activacion.jpg" },
             ].map((step) => (
-              <div key={step.num} className="relative rounded-2xl border border-zinc-800 p-3">
-                <GlowingEffect blur={0} borderWidth={2} spread={80} glow={true} disabled={false} proximity={64} inactiveZone={0.01} />
-                <div className="relative bg-zinc-950 rounded-xl overflow-hidden h-full flex flex-col">
+              <div key={step.num} className="relative rounded-2xl border border-zinc-800/60 p-1 card-lift transition-all duration-500">
+                <GlowingEffect blur={0} borderWidth={1} spread={80} glow={true} disabled={false} proximity={64} inactiveZone={0.01} />
+                <div className="relative bg-zinc-950/90 backdrop-blur-sm rounded-xl overflow-hidden h-full flex flex-col">
                   {/* Image with gradient overlay — same style as methodology section */}
                   <div className="relative h-36 w-full overflow-hidden">
                     <Image
@@ -248,7 +248,7 @@ export default function TuMarca() {
                   </div>
                   {/* Content */}
                   <div className="p-8 flex flex-col gap-6 flex-1">
-                    <span className="text-5xl font-light text-zinc-800">{step.num}</span>
+                    <span className="text-5xl font-light tracking-tight animate-text-shimmer" style={{ color: '#3f3f46' }}>{step.num}</span>
                     <div>
                       <h3 className="text-xl font-light text-white mb-3">{step.title}</h3>
                       <p className="text-zinc-500 text-sm leading-relaxed">{step.desc}</p>

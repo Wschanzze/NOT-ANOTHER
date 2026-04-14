@@ -83,7 +83,7 @@ export function MethodologySection() {
                 </div>
                 {/* Content */}
                 <div className="p-8 flex flex-col gap-6 flex-1">
-                  <span className="text-6xl font-light text-zinc-800 tracking-tight">{step.number}</span>
+                  <span className="text-6xl font-light tracking-tight animate-text-shimmer" style={{ color: '#3f3f46' }}>{step.number}</span>
                   <div>
                     <h3 className="text-xl font-light text-white mb-3">{step.title}</h3>
                     <p className="text-zinc-500 text-sm leading-relaxed">{step.description}</p>
