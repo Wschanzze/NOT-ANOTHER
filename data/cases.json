@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "tag": "Fintech",
+    "title": "Reducción del 60% en tiempo de onboarding",
+    "description": "Automatizamos el proceso de verificación de identidad y scoring crediticio para una fintech, reduciendo el tiempo de aprobación de 5 días a menos de 2 horas.",
+    "metrics": ["60% menos tiempo", "2h de aprobación", "0 errores manuales"]
+  },
+  {
+    "id": "2",
+    "tag": "Manufactura",
+    "title": "Sistema de mantenimiento predictivo con IA",
+    "description": "Implementamos sensores IoT y modelos de machine learning para anticipar fallas en maquinaria industrial, eliminando paradas no programadas.",
+    "metrics": ["85% de precisión", "$2M ahorrados", "40% menos downtime"]
+  },
+  {
+    "id": "3",
+    "tag": "Logística",
+    "title": "Plataforma de trazabilidad en tiempo real",
+    "description": "Desarrollamos una plataforma full-stack de seguimiento de envíos con integración a múltiples transportistas y paneles de control en tiempo real.",
+    "metrics": ["120K envíos/mes", "99.9% uptime", "15 integraciones"]
+  },
+  {
+    "id": "4",
+    "tag": "E-commerce",
+    "title": "Incremento del 250% en conversión con recomendaciones IA",
+    "description": "Construimos un motor de recomendaciones impulsado por machine learning que personaliza la experiencia de cada usuario, resultando en aumento significativo de AOV y reducción de abandonos.",
+    "metrics": ["250% conversión", "45% AOV +", "8.5% abandono -"]
+  },
+  {
+    "id": "5",
+    "tag": "SaaS",
+    "title": "Plataforma colaborativa con 10K usuarios activos",
+    "description": "Desarrollamos una plataforma SaaS full-stack con real-time collaboration, WebSocket integration y soporte multi-tenancy, manejando picos de 50K requests/min.",
+    "metrics": ["10K DAU", "50K req/min", "99.95% SLA"]
+  }
+]

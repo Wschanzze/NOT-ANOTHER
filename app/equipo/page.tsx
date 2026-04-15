@@ -1,5 +1,3 @@
-"use client"
-
 import Image from "next/image"
 import Link from "next/link"
 import { Navbar } from "@/components/navbar"
@@ -7,49 +5,18 @@ import { Footer } from "@/components/footer"
 import { GlowingEffect } from "@/components/ui/glowing-effect"
 import { Button } from "@/components/ui/button"
 import { CircleArrowRight, Linkedin, Twitter } from "lucide-react"
+import { readJSON } from "@/lib/data"
 
-const team = [
-  {
-    name: "Mateo Rodríguez",
-    role: "CEO & Fundador",
-    description:
-      "Visionario detrás de Not Another. Con más de 10 años de experiencia liderando transformaciones digitales en empresas de LATAM, Mateo combina visión estratégica con ejecución tecnológica para construir soluciones que realmente impactan.",
-    skills: ["Estrategia de Negocio", "Liderazgo Ejecutivo", "Transformación Digital", "IA Aplicada"],
-    image: "/images/team-ceo.jpg",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Lucas Fernández",
-    role: "CTO & Arquitecto de Soluciones",
-    description:
-      "El cerebro técnico del equipo. Lucas diseña arquitecturas escalables y supervisa el desarrollo de todas las soluciones digitales. Especialista en sistemas distribuidos, automatizaciones y modelos de IA a medida.",
-    skills: ["Arquitectura de Software", "IA & Machine Learning", "DevOps", "Cloud Infrastructure"],
-    image: "/images/team-cto.jpg",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Valentina Torres",
-    role: "Directora Creativa & Brand Lead",
-    description:
-      "Valentina transforma ideas en identidades visuales memorables. Con formación en diseño y branding estratégico, lidera todos los proyectos de identidad y comunicación visual asegurando coherencia y diferenciación en cada pieza.",
-    skills: ["Branding Estratégico", "Diseño UI/UX", "Identidad Visual", "Dirección de Arte"],
-    image: "/images/team-design.jpg",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Sofía Méndez",
-    role: "Estratega de Negocios & Consultora Senior",
-    description:
-      "Sofía conecta los puntos entre los datos, el mercado y las personas. Experta en análisis competitivo y diseño de estrategias go-to-market, acompaña a los clientes desde el diagnóstico hasta la implementación.",
-    skills: ["Consultoría Estratégica", "Análisis de Mercado", "Go-to-Market", "Gestión de Proyectos"],
-    image: "/images/team-strategy.jpg",
-    linkedin: "#",
-    twitter: "#",
-  },
-]
+interface TeamMember {
+  id: string
+  name: string
+  role: string
+  description: string
+  skills: string[]
+  image: string
+  linkedin: string
+  twitter: string
+}
 
 const values = [
   {
@@ -67,6 +34,8 @@ const values = [
 ]
 
 export default function Equipo() {
+  const team = readJSON<TeamMember[]>("team.json")
+
   return (
     <main className="relative bg-black text-white min-h-screen overflow-hidden">
       <Navbar />
