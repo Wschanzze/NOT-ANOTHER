@@ -169,7 +169,7 @@ export default function Home() {
         <div className="track w-full h-full">
           <Suspense fallback={null}>
             <Spline
-              scene="https://prod.spline.design/jLFz8FCRqdA2SMna/scene.splinecode"
+              scene="https://prod.spline.design/tf8yCcnSHWkvjvul/scene.splinecode"
               style={{ width: "100%", height: "100%" }}
             />
           </Suspense>
